@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="camelinaction.BlueprintRestBeanOrderServiceTest" time="7.226" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/test-classes:/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/classes:/home/agagliar/.m2/repository/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core/2.17.0.redhat-630495/camel-core-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/slf4j/slf4j-api/1.7.22.redhat-2/slf4j-api-1.7.22.redhat-2.jar:/home/agagliar/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar:/home/agagliar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.11.redhat-2/jaxb-impl-2.2.11.redhat-2.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-blueprint/2.17.0.redhat-630495/camel-blueprint-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core-xml/2.17.0.redhat-630495/camel-core-xml-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core-osgi/2.17.0.redhat-630495/camel-core-osgi-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-cxf/2.17.0.redhat-630495/camel-cxf-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-spring/2.17.0.redhat-630495/camel-spring-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/springframework/spring-aop/3.2.18.RELEASE/spring-aop-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/agagliar/.m2/repository/org/springframework/spring-expression/3.2.18.RELEASE/spring-expression-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-tx/3.2.18.RELEASE/spring-tx-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-cxf-transport/2.17.0.redhat-630495/camel-cxf-transport-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0.redhat-1/javax.servlet-api-3.1.0.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxrs/3.1.5.redhat-630495/cxf-rt-frontend-jaxrs-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/home/agagliar/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxws/3.1.5.redhat-630495/cxf-rt-frontend-jaxws-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/xml-resolver/xml-resolver/1.2.0.redhat-10/xml-resolver-1.2.0.redhat-10.jar:/home/agagliar/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-bindings-xml/3.1.5.redhat-630495/cxf-rt-bindings-xml-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-simple/3.1.5.redhat-630495/cxf-rt-frontend-simple-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-ws-addr/3.1.5.redhat-630495/cxf-rt-ws-addr-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-ws-policy/3.1.5.redhat-630495/cxf-rt-ws-policy-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/neethi/neethi/3.0.3.redhat-1/neethi-3.0.3.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-security-oauth/3.1.5.redhat-630495/cxf-rt-rs-security-oauth-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-client/3.1.5.redhat-630495/cxf-rt-rs-client-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/net/oauth/core/oauth-provider/20100527/oauth-provider-20100527.jar:/home/agagliar/.m2/repository/net/oauth/core/oauth/20100527/oauth-20100527.jar:/home/agagliar/.m2/repository/org/springframework/spring-core/3.2.18.RELEASE/spring-core-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-beans/3.2.18.RELEASE/spring-beans-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-context/3.2.18.RELEASE/spring-context-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-bindings-soap/3.1.5.redhat-630495/cxf-rt-bindings-soap-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-wsdl/3.1.5.redhat-630495/cxf-rt-wsdl-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/wsdl4j/wsdl4j/1.6.3.redhat-1/wsdl4j-1.6.3.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-databinding-jaxb/3.1.5.redhat-630495/cxf-rt-databinding-jaxb-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-jaxb/2.17.0.redhat-630495/camel-jaxb-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-transports-http/3.1.5.redhat-630495/cxf-rt-transports-http-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-core/3.1.5.redhat-630495/cxf-core-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/home/agagliar/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/home/agagliar/.m2/repository/org/apache/ws/xmlschema/xmlschema-core/2.2.1.redhat-1/xmlschema-core-2.2.1.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-transports-http-jetty/3.1.5.redhat-630495/cxf-rt-transports-http-jetty-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-server/9.2.23.v20171218/jetty-server-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.23.v20171218/jetty-util-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.23.v20171218/jetty-io-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-security/9.2.23.v20171218/jetty-security-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-continuation/9.2.23.v20171218/jetty-continuation-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-http/9.2.23.v20171218/jetty-http-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-extension-providers/3.1.5.redhat-630495/cxf-rt-rs-extension-providers-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.6.3/jackson-jaxrs-json-provider-2.6.3.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.6.3/jackson-jaxrs-base-2.6.3.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.3.redhat-4/jackson-core-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.3.redhat-4/jackson-databind-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.3.redhat-4/jackson-annotations-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.3/jackson-module-jaxb-annotations-2.6.3.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-test-blueprint/2.17.0.redhat-630495/camel-test-blueprint-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-test/2.17.0.redhat-630495/camel-test-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core/2.17.0.redhat-630495/camel-core-2.17.0.redhat-630495-tests.jar:/home/agagliar/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.api/1.0.1/org.apache.aries.proxy.api-1.0.1.jar:/home/agagliar/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.impl/1.0.4/org.apache.aries.proxy.impl-1.0.4.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.1/org.apache.aries.blueprint.api-1.0.1.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.8.0/org.apache.aries.blueprint.core-1.8.0.jar:/home/agagliar/.m2/repository/org/apache/aries/quiesce/org.apache.aries.quiesce.api/1.0.0/org.apache.aries.quiesce.api-1.0.0.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.0.6/org.apache.aries.blueprint.cm-1.0.6.jar:/home/agagliar/.m2/repository/org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.connect/0.2.0/org.apache.felix.connect-0.2.0.jar:/home/agagliar/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-tinybundles/1.3.2/pax-swissbox-tinybundles-1.3.2.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-lang/1.5.0/ops4j-base-lang-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-io/1.5.0/ops4j-base-io-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-monitors/1.5.0/ops4j-base-monitors-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-store/1.5.0/ops4j-base-store-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-bnd/1.8.2/pax-swissbox-bnd-1.8.2.jar:/home/agagliar/.m2/repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/home/agagliar/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/2.4.1/biz.aQute.bndlib-2.4.1.jar:/home/agagliar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.8.12/org.apache.felix.configadmin-1.8.12.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.fileinstall/3.6.4/org.apache.felix.fileinstall-3.6.4.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-restlet/2.17.0.redhat-630495/camel-restlet-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/restlet/jee/org.restlet/2.3.6/org.restlet-2.3.6.jar:/home/agagliar/.m2/repository/org/restlet/jee/org.restlet.ext.httpclient/2.3.6/org.restlet.ext.httpclient-2.3.6.jar:/home/agagliar/.m2/repository/commons-codec/commons-codec/1.10.0.redhat-5/commons-codec-1.10.0.redhat-5.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.jar:/home/agagliar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/agagliar/.m2/repository/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar:/home/agagliar/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/agagliar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/agagliar/.m2/repository/org/slf4j/slf4j-log4j12/1.7.22.redhat-2/slf4j-log4j12-1.7.22.redhat-2.jar:/home/agagliar/.m2/repository/log4j/log4j/1.2.17.redhat-1/log4j-1.2.17.redhat-1.jar:"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/surefire/surefirebooter8007714570618956143.jar /home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/surefire 2021-10-28T11-59-21_094-jvmRun1 surefire5544853196976757616tmp surefire_03177254389941873189tmp"/>
+    <property name="surefire.test.class.path" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/test-classes:/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/classes:/home/agagliar/.m2/repository/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core/2.17.0.redhat-630495/camel-core-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/slf4j/slf4j-api/1.7.22.redhat-2/slf4j-api-1.7.22.redhat-2.jar:/home/agagliar/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.11/jaxb-core-2.2.11.jar:/home/agagliar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.11.redhat-2/jaxb-impl-2.2.11.redhat-2.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-blueprint/2.17.0.redhat-630495/camel-blueprint-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core-xml/2.17.0.redhat-630495/camel-core-xml-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core-osgi/2.17.0.redhat-630495/camel-core-osgi-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-cxf/2.17.0.redhat-630495/camel-cxf-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-spring/2.17.0.redhat-630495/camel-spring-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/springframework/spring-aop/3.2.18.RELEASE/spring-aop-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/agagliar/.m2/repository/org/springframework/spring-expression/3.2.18.RELEASE/spring-expression-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-tx/3.2.18.RELEASE/spring-tx-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-cxf-transport/2.17.0.redhat-630495/camel-cxf-transport-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0.redhat-1/javax.servlet-api-3.1.0.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxrs/3.1.5.redhat-630495/cxf-rt-frontend-jaxrs-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/home/agagliar/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-jaxws/3.1.5.redhat-630495/cxf-rt-frontend-jaxws-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/xml-resolver/xml-resolver/1.2.0.redhat-10/xml-resolver-1.2.0.redhat-10.jar:/home/agagliar/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-bindings-xml/3.1.5.redhat-630495/cxf-rt-bindings-xml-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-frontend-simple/3.1.5.redhat-630495/cxf-rt-frontend-simple-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-ws-addr/3.1.5.redhat-630495/cxf-rt-ws-addr-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-ws-policy/3.1.5.redhat-630495/cxf-rt-ws-policy-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/neethi/neethi/3.0.3.redhat-1/neethi-3.0.3.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-security-oauth/3.1.5.redhat-630495/cxf-rt-rs-security-oauth-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-client/3.1.5.redhat-630495/cxf-rt-rs-client-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/net/oauth/core/oauth-provider/20100527/oauth-provider-20100527.jar:/home/agagliar/.m2/repository/net/oauth/core/oauth/20100527/oauth-20100527.jar:/home/agagliar/.m2/repository/org/springframework/spring-core/3.2.18.RELEASE/spring-core-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-beans/3.2.18.RELEASE/spring-beans-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/springframework/spring-context/3.2.18.RELEASE/spring-context-3.2.18.RELEASE.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-bindings-soap/3.1.5.redhat-630495/cxf-rt-bindings-soap-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-wsdl/3.1.5.redhat-630495/cxf-rt-wsdl-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/wsdl4j/wsdl4j/1.6.3.redhat-1/wsdl4j-1.6.3.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-databinding-jaxb/3.1.5.redhat-630495/cxf-rt-databinding-jaxb-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-jaxb/2.17.0.redhat-630495/camel-jaxb-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-transports-http/3.1.5.redhat-630495/cxf-rt-transports-http-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-core/3.1.5.redhat-630495/cxf-core-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar:/home/agagliar/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar:/home/agagliar/.m2/repository/org/apache/ws/xmlschema/xmlschema-core/2.2.1.redhat-1/xmlschema-core-2.2.1.redhat-1.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-transports-http-jetty/3.1.5.redhat-630495/cxf-rt-transports-http-jetty-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-server/9.2.23.v20171218/jetty-server-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.23.v20171218/jetty-util-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.23.v20171218/jetty-io-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-security/9.2.23.v20171218/jetty-security-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-continuation/9.2.23.v20171218/jetty-continuation-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/eclipse/jetty/jetty-http/9.2.23.v20171218/jetty-http-9.2.23.v20171218.jar:/home/agagliar/.m2/repository/org/apache/cxf/cxf-rt-rs-extension-providers/3.1.5.redhat-630495/cxf-rt-rs-extension-providers-3.1.5.redhat-630495.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.6.3/jackson-jaxrs-json-provider-2.6.3.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.6.3/jackson-jaxrs-base-2.6.3.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.3.redhat-4/jackson-core-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.3.redhat-4/jackson-databind-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.3.redhat-4/jackson-annotations-2.6.3.redhat-4.jar:/home/agagliar/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.3/jackson-module-jaxb-annotations-2.6.3.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-test-blueprint/2.17.0.redhat-630495/camel-test-blueprint-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-test/2.17.0.redhat-630495/camel-test-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-core/2.17.0.redhat-630495/camel-core-2.17.0.redhat-630495-tests.jar:/home/agagliar/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.api/1.0.1/org.apache.aries.proxy.api-1.0.1.jar:/home/agagliar/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.impl/1.0.4/org.apache.aries.proxy.impl-1.0.4.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.1/org.apache.aries.blueprint.api-1.0.1.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.8.0/org.apache.aries.blueprint.core-1.8.0.jar:/home/agagliar/.m2/repository/org/apache/aries/quiesce/org.apache.aries.quiesce.api/1.0.0/org.apache.aries.quiesce.api-1.0.0.jar:/home/agagliar/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.0.6/org.apache.aries.blueprint.cm-1.0.6.jar:/home/agagliar/.m2/repository/org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.connect/0.2.0/org.apache.felix.connect-0.2.0.jar:/home/agagliar/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-tinybundles/1.3.2/pax-swissbox-tinybundles-1.3.2.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-lang/1.5.0/ops4j-base-lang-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-io/1.5.0/ops4j-base-io-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-monitors/1.5.0/ops4j-base-monitors-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/base/ops4j-base-store/1.5.0/ops4j-base-store-1.5.0.jar:/home/agagliar/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-bnd/1.8.2/pax-swissbox-bnd-1.8.2.jar:/home/agagliar/.m2/repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/home/agagliar/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/2.4.1/biz.aQute.bndlib-2.4.1.jar:/home/agagliar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.8.12/org.apache.felix.configadmin-1.8.12.jar:/home/agagliar/.m2/repository/org/apache/felix/org.apache.felix.fileinstall/3.6.4/org.apache.felix.fileinstall-3.6.4.jar:/home/agagliar/.m2/repository/org/apache/camel/camel-restlet/2.17.0.redhat-630495/camel-restlet-2.17.0.redhat-630495.jar:/home/agagliar/.m2/repository/org/restlet/jee/org.restlet/2.3.6/org.restlet-2.3.6.jar:/home/agagliar/.m2/repository/org/restlet/jee/org.restlet.ext.httpclient/2.3.6/org.restlet.ext.httpclient-2.3.6.jar:/home/agagliar/.m2/repository/commons-codec/commons-codec/1.10.0.redhat-5/commons-codec-1.10.0.redhat-5.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/home/agagliar/.m2/repository/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.jar:/home/agagliar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/agagliar/.m2/repository/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar:/home/agagliar/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/agagliar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/agagliar/.m2/repository/org/slf4j/slf4j-log4j12/1.7.22.redhat-2/slf4j-log4j12-1.7.22.redhat-2.jar:/home/agagliar/.m2/repository/log4j/log4j/1.2.17.redhat-1/log4j-1.2.17.redhat-1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/agagliar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre"/>
+    <property name="basedir" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/surefire/surefirebooter8007714570618956143.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_292-b10"/>
+    <property name="user.name" value="agagliar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="3.10.0-1160.42.2.el7.x86_64"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/agagliar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%207&amp;component=java-1.8.0-openjdk"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="user.dir" value="/home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testGetOrder" classname="camelinaction.BlueprintRestBeanOrderServiceTest" time="2.721">
+    <system-out><![CDATA[2021-10-28 11:59:21,968 [main           ] INFO  CamelBlueprintHelper           - Using Blueprint XML file: /home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/classes/OSGI-INF/blueprint/rest-order.xml
+2021-10-28 11:59:21,980 [Thread-1       ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:21,984 [Thread-2       ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:22,111 [main           ] INFO  Activator                      - Camel activator starting
+2021-10-28 11:59:22,133 [main           ] INFO  Activator                      - Camel activator started
+2021-10-28 11:59:22,242 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+2021-10-28 11:59:22,247 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+2021-10-28 11:59:22,250 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+2021-10-28 11:59:22,252 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+2021-10-28 11:59:22,254 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/policy
+2021-10-28 11:59:22,255 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+2021-10-28 11:59:22,255 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+2021-10-28 11:59:22,255 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+2021-10-28 11:59:22,255 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+2021-10-28 11:59:22,256 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+2021-10-28 11:59:22,256 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+2021-10-28 11:59:22,256 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+2021-10-28 11:59:22,260 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+2021-10-28 11:59:22,262 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Unable to start bundle: org.apache.cxf.cxf-rt-transports-http [30]
+2021-10-28 11:59:22,303 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.camel.camel-cxf-transport (12) [org.apache.camel.component.cxf.transport.CamelTransportFactory]
+2021-10-28 11:59:22,305 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (17) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+2021-10-28 11:59:22,305 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (19) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+2021-10-28 11:59:22,306 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (21) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+2021-10-28 11:59:22,307 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (22) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+2021-10-28 11:59:22,308 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (26) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+2021-10-28 11:59:22,308 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (27) [org.apache.cxf.wsdl.WSDLManager]
+2021-10-28 11:59:22,309 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (30) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+2021-10-28 11:59:22,310 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (35) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+2021-10-28 11:59:22,319 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+2021-10-28 11:59:22,319 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+2021-10-28 11:59:22,319 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+2021-10-28 11:59:22,320 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+2021-10-28 11:59:22,320 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+2021-10-28 11:59:22,320 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+2021-10-28 11:59:22,320 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+2021-10-28 11:59:22,341 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+2021-10-28 11:59:22,430 [int Extender: 1] INFO  BlueprintContainerImpl         - Bundle BlueprintRestBeanOrderServiceTest/1.0.0 is waiting for namespace handlers [http://camel.apache.org/schema/blueprint/cxf, http://camel.apache.org/schema/blueprint]
+2021-10-28 11:59:23,580 [t Dispatcher: 1] INFO  BlueprintCamelContext          - Attempting to start Camel Context camel
+2021-10-28 11:59:23,580 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:23,580 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing: testGetOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:23,580 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:23,588 [main           ] INFO  eprintRestBeanOrderServiceTest - Skipping starting CamelContext as system property skipStartingCamelContext is set to be true.
+2021-10-28 11:59:23,588 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is starting
+2021-10-28 11:59:23,589 [main           ] INFO  ManagedManagementStrategy      - JMX is enabled
+2021-10-28 11:59:23,724 [main           ] INFO  DefaultRuntimeEndpointRegistry - Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2021-10-28 11:59:23,826 [main           ] INFO  BlueprintCamelContext          - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2021-10-28 11:59:23,826 [main           ] INFO  BlueprintCamelContext          - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2021-10-28 11:59:23,864 [main           ] INFO  ServerImpl                     - Setting the server's publish address to be http://localhost:8080
+2021-10-28 11:59:23,938 [main           ] INFO  log                            - Logging initialized @2408ms
+2021-10-28 11:59:23,960 [main           ] INFO  Server                         - jetty-9.2.23.v20171218
+2021-10-28 11:59:23,971 [main           ] WARN  AbstractHandler                - No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@77d67cf3
+2021-10-28 11:59:23,979 [main           ] INFO  ServerConnector                - Started ServerConnector@253d9f73{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:23,979 [main           ] INFO  Server                         - Started @2449ms
+2021-10-28 11:59:23,983 [main           ] WARN  ContextHandler                 - Empty contextPath
+2021-10-28 11:59:23,989 [main           ] INFO  ContextHandler                 - Started o.e.j.s.h.ContextHandler@79c7532f{/,null,AVAILABLE}
+2021-10-28 11:59:23,989 [main           ] INFO  BlueprintCamelContext          - Route: route1 started and consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:23,990 [main           ] INFO  BlueprintCamelContext          - Route: route2 started and consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:23,991 [main           ] INFO  BlueprintCamelContext          - Route: route3 started and consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:23,992 [main           ] INFO  BlueprintCamelContext          - Route: route4 started and consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:23,992 [main           ] INFO  BlueprintCamelContext          - Route: route5 started and consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:23,992 [main           ] INFO  BlueprintCamelContext          - Total 5 routes, of which 5 are started.
+2021-10-28 11:59:23,993 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) started in 0.404 seconds
+2021-10-28 11:59:24,601 [main           ] INFO  eprintRestBeanOrderServiceTest - Response: {"id":1,"partName":"motor","amount":1,"customerName":"honda"}
+2021-10-28 11:59:24,602 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:24,602 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing done: testGetOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:24,602 [main           ] INFO  eprintRestBeanOrderServiceTest - Took: 1.014 seconds (1014 millis)
+2021-10-28 11:59:24,602 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:24,603 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutting down
+2021-10-28 11:59:24,604 [main           ] INFO  DefaultShutdownStrategy        - Starting to graceful shutdown 5 routes (timeout 10 seconds)
+2021-10-28 11:59:24,607 [ - ShutdownTask] INFO  ContextHandler                 - Stopped o.e.j.s.h.ContextHandler@79c7532f{/,null,UNAVAILABLE}
+2021-10-28 11:59:24,607 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route1 shutdown complete, was consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:24,608 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route5 shutdown complete, was consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:24,608 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route4 shutdown complete, was consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:24,608 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route3 shutdown complete, was consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:24,608 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route2 shutdown complete, was consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:24,608 [main           ] INFO  DefaultShutdownStrategy        - Graceful shutdown of 5 routes completed in 0 seconds
+2021-10-28 11:59:24,612 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) uptime 1.024 seconds
+2021-10-28 11:59:24,612 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutdown in 0.009 seconds
+2021-10-28 11:59:24,614 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.cm/1.0.6
+2021-10-28 11:59:24,616 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle BlueprintRestBeanOrderServiceTest/1.0.0
+2021-10-28 11:59:24,621 [main           ] INFO  ServerConnector                - Stopped ServerConnector@253d9f73{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:24,623 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.core/1.8.0
+2021-10-28 11:59:24,625 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-blueprint/2.17.0.redhat-630495
+2021-10-28 11:59:24,625 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf-transport/2.17.0.redhat-630495
+2021-10-28 11:59:24,626 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf/2.17.0.redhat-630495
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 35
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 12
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 17
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 19
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 21
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 22
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 26
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 27
+2021-10-28 11:59:24,630 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 30
+2021-10-28 11:59:24,631 [main           ] INFO  Activator                      - Camel activator stopping
+2021-10-28 11:59:24,632 [main           ] INFO  Activator                      - Camel activator stopped
+2021-10-28 11:59:24,632 [main           ] INFO  CamelBlueprintHelper           - Deleting work directory target/bundles/1635415161971
+]]></system-out>
+    <system-err><![CDATA[org.osgi.framework.BundleException: Unable to start bundle
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:163)
+	at org.apache.felix.connect.PojoSR.startBundles(PojoSR.java:314)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:258)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:130)
+	at org.apache.felix.connect.PojoServiceRegistryFactoryImpl.newPojoServiceRegistry(PojoServiceRegistryFactoryImpl.java:53)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:198)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:133)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:111)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.createBundleContext(CamelBlueprintTestSupport.java:128)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.setUp(CamelBlueprintTestSupport.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.NoClassDefFoundError: org/osgi/service/http/HttpService
+	at org.apache.cxf.transport.http.osgi.HTTPTransportActivator.start(HTTPTransportActivator.java:63)
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:153)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: org.osgi.service.http.HttpService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 41 more
+Oct 28, 2021 11:59:24 AM org.restlet.ext.httpclient.HttpClientHelper start
+INFO: Starting the Apache HTTP client
+Oct 28, 2021 11:59:24 AM org.restlet.ext.httpclient.HttpClientHelper stop
+INFO: Stopping the HTTP client
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateOrder" classname="camelinaction.BlueprintRestBeanOrderServiceTest" time="2.193">
+    <system-out><![CDATA[2021-10-28 11:59:24,636 [main           ] INFO  CamelBlueprintHelper           - Using Blueprint XML file: /home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/classes/OSGI-INF/blueprint/rest-order.xml
+2021-10-28 11:59:24,645 [Thread-15      ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:24,646 [Thread-16      ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:24,700 [main           ] INFO  Activator                      - Camel activator starting
+2021-10-28 11:59:24,702 [main           ] INFO  Activator                      - Camel activator started
+2021-10-28 11:59:24,722 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+2021-10-28 11:59:24,725 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+2021-10-28 11:59:24,727 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+2021-10-28 11:59:24,727 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+2021-10-28 11:59:24,728 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/policy
+2021-10-28 11:59:24,728 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+2021-10-28 11:59:24,728 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+2021-10-28 11:59:24,728 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+2021-10-28 11:59:24,728 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+2021-10-28 11:59:24,729 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+2021-10-28 11:59:24,729 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+2021-10-28 11:59:24,729 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+2021-10-28 11:59:24,731 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+2021-10-28 11:59:24,732 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Unable to start bundle: org.apache.cxf.cxf-rt-transports-http [30]
+2021-10-28 11:59:24,741 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.camel.camel-cxf-transport (12) [org.apache.camel.component.cxf.transport.CamelTransportFactory]
+2021-10-28 11:59:24,742 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (17) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+2021-10-28 11:59:24,742 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (19) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+2021-10-28 11:59:24,742 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (21) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+2021-10-28 11:59:24,743 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (22) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+2021-10-28 11:59:24,744 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (26) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+2021-10-28 11:59:24,744 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (27) [org.apache.cxf.wsdl.WSDLManager]
+2021-10-28 11:59:24,744 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (30) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+2021-10-28 11:59:24,745 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (35) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+2021-10-28 11:59:24,752 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+2021-10-28 11:59:24,752 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+2021-10-28 11:59:24,753 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+2021-10-28 11:59:24,753 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+2021-10-28 11:59:24,753 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+2021-10-28 11:59:24,753 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+2021-10-28 11:59:24,753 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+2021-10-28 11:59:24,759 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+2021-10-28 11:59:24,776 [int Extender: 1] INFO  BlueprintContainerImpl         - Bundle BlueprintRestBeanOrderServiceTest/1.0.0 is waiting for namespace handlers [http://camel.apache.org/schema/blueprint/cxf, http://camel.apache.org/schema/blueprint]
+2021-10-28 11:59:24,815 [int Extender: 1] INFO  BlueprintContainerImpl         - Bundle BlueprintRestBeanOrderServiceTest/1.0.0 is waiting for namespace handlers [http://camel.apache.org/schema/blueprint/cxf]
+2021-10-28 11:59:25,057 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:25,057 [t Dispatcher: 1] INFO  BlueprintCamelContext          - Attempting to start Camel Context camel
+2021-10-28 11:59:25,057 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing: testCreateOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:25,057 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:25,058 [main           ] INFO  eprintRestBeanOrderServiceTest - Skipping starting CamelContext as system property skipStartingCamelContext is set to be true.
+2021-10-28 11:59:25,058 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is starting
+2021-10-28 11:59:25,058 [main           ] INFO  DefaultManagementStrategy      - JMX is disabled
+2021-10-28 11:59:25,074 [main           ] INFO  BlueprintCamelContext          - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2021-10-28 11:59:25,074 [main           ] INFO  BlueprintCamelContext          - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2021-10-28 11:59:25,075 [main           ] INFO  ServerImpl                     - Setting the server's publish address to be http://localhost:8080
+2021-10-28 11:59:25,084 [main           ] INFO  Server                         - jetty-9.2.23.v20171218
+2021-10-28 11:59:25,085 [main           ] WARN  AbstractHandler                - No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@2970a5bc
+2021-10-28 11:59:25,085 [main           ] INFO  ServerConnector                - Started ServerConnector@50305a{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:25,086 [main           ] INFO  Server                         - Started @3555ms
+2021-10-28 11:59:25,086 [main           ] WARN  ContextHandler                 - Empty contextPath
+2021-10-28 11:59:25,086 [main           ] INFO  ContextHandler                 - Started o.e.j.s.h.ContextHandler@72efb5c1{/,null,AVAILABLE}
+2021-10-28 11:59:25,086 [main           ] INFO  BlueprintCamelContext          - Route: route6 started and consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:25,086 [main           ] INFO  BlueprintCamelContext          - Route: route7 started and consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:25,087 [main           ] INFO  BlueprintCamelContext          - Route: route8 started and consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:25,087 [main           ] INFO  BlueprintCamelContext          - Route: route9 started and consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:25,087 [main           ] INFO  BlueprintCamelContext          - Route: route10 started and consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:25,087 [main           ] INFO  BlueprintCamelContext          - Total 5 routes, of which 5 are started.
+2021-10-28 11:59:25,087 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) started in 0.029 seconds
+2021-10-28 11:59:25,088 [main           ] INFO  eprintRestBeanOrderServiceTest - Sending order using json payload: {"partName":"motor","amount":1,"customerName":"honda"}
+2021-10-28 11:59:25,141 [main           ] INFO  eprintRestBeanOrderServiceTest - Created new order with id 3
+2021-10-28 11:59:25,142 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:25,142 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing done: testCreateOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:25,142 [main           ] INFO  eprintRestBeanOrderServiceTest - Took: 0.084 seconds (84 millis)
+2021-10-28 11:59:25,142 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:25,142 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutting down
+2021-10-28 11:59:25,142 [main           ] INFO  DefaultShutdownStrategy        - Starting to graceful shutdown 5 routes (timeout 10 seconds)
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  ContextHandler                 - Stopped o.e.j.s.h.ContextHandler@72efb5c1{/,null,UNAVAILABLE}
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route6 shutdown complete, was consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route10 shutdown complete, was consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route9 shutdown complete, was consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route8 shutdown complete, was consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:25,143 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route7 shutdown complete, was consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:25,143 [main           ] INFO  DefaultShutdownStrategy        - Graceful shutdown of 5 routes completed in 0 seconds
+2021-10-28 11:59:25,145 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) uptime 0.086 seconds
+2021-10-28 11:59:25,145 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutdown in 0.002 seconds
+2021-10-28 11:59:26,816 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.cm/1.0.6
+2021-10-28 11:59:26,819 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle BlueprintRestBeanOrderServiceTest/1.0.0
+2021-10-28 11:59:26,824 [main           ] INFO  ServerConnector                - Stopped ServerConnector@50305a{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:26,826 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.core/1.8.0
+2021-10-28 11:59:26,830 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf/2.17.0.redhat-630495
+2021-10-28 11:59:26,831 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf-transport/2.17.0.redhat-630495
+2021-10-28 11:59:26,832 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-blueprint/2.17.0.redhat-630495
+2021-10-28 11:59:26,841 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 35
+2021-10-28 11:59:26,841 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 12
+2021-10-28 11:59:26,841 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 17
+2021-10-28 11:59:26,841 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 19
+2021-10-28 11:59:26,842 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 21
+2021-10-28 11:59:26,842 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 22
+2021-10-28 11:59:26,842 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 26
+2021-10-28 11:59:26,842 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 27
+2021-10-28 11:59:26,842 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 30
+2021-10-28 11:59:26,844 [main           ] INFO  Activator                      - Camel activator stopping
+2021-10-28 11:59:26,844 [main           ] INFO  Activator                      - Camel activator stopped
+2021-10-28 11:59:26,845 [main           ] INFO  CamelBlueprintHelper           - Deleting work directory target/bundles/1635415164637
+]]></system-out>
+    <system-err><![CDATA[org.osgi.framework.BundleException: Unable to start bundle
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:163)
+	at org.apache.felix.connect.PojoSR.startBundles(PojoSR.java:314)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:258)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:130)
+	at org.apache.felix.connect.PojoServiceRegistryFactoryImpl.newPojoServiceRegistry(PojoServiceRegistryFactoryImpl.java:53)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:198)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:133)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:111)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.createBundleContext(CamelBlueprintTestSupport.java:128)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.setUp(CamelBlueprintTestSupport.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.NoClassDefFoundError: org/osgi/service/http/HttpService
+	at org.apache.cxf.transport.http.osgi.HTTPTransportActivator.start(HTTPTransportActivator.java:63)
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:153)
+	... 39 more
+Oct 28, 2021 11:59:25 AM org.restlet.ext.httpclient.HttpClientHelper start
+INFO: Starting the Apache HTTP client
+Oct 28, 2021 11:59:25 AM org.restlet.ext.httpclient.HttpClientHelper stop
+INFO: Stopping the HTTP client
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateAndGetOrder" classname="camelinaction.BlueprintRestBeanOrderServiceTest" time="2.191">
+    <system-out><![CDATA[2021-10-28 11:59:26,847 [main           ] INFO  CamelBlueprintHelper           - Using Blueprint XML file: /home/agagliar/Projects/cases/03056197-telenor-bp-graceperiod/example/camel-cxf-rest-karaf/target/classes/OSGI-INF/blueprint/rest-order.xml
+2021-10-28 11:59:26,855 [Thread-28      ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:26,862 [Thread-29      ] INFO  RawBuilder                     - Copy thread finished.
+2021-10-28 11:59:26,890 [main           ] INFO  Activator                      - Camel activator starting
+2021-10-28 11:59:26,891 [main           ] INFO  Activator                      - Camel activator started
+2021-10-28 11:59:26,905 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs
+2021-10-28 11:59:26,907 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxws
+2021-10-28 11:59:26,908 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/simple
+2021-10-28 11:59:26,909 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/ws/addressing
+2021-10-28 11:59:26,909 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/policy
+2021-10-28 11:59:26,909 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/ns/ws-policy
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2006/07/ws-policy
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/09/policy
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2000/09/xmldsig#
+2021-10-28 11:59:26,910 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702
+2021-10-28 11:59:26,911 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/jaxrs-client
+2021-10-28 11:59:26,912 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/bindings/soap
+Unable to start bundle: org.apache.cxf.cxf-rt-transports-http [30]
+2021-10-28 11:59:26,919 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.camel.camel-cxf-transport (12) [org.apache.camel.component.cxf.transport.CamelTransportFactory]
+2021-10-28 11:59:26,920 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (17) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+2021-10-28 11:59:26,920 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (19) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+2021-10-28 11:59:26,920 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (21) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+2021-10-28 11:59:26,921 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (22) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.external.URIDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+2021-10-28 11:59:26,921 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (26) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+2021-10-28 11:59:26,922 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-wsdl (27) [org.apache.cxf.wsdl.WSDLManager]
+2021-10-28 11:59:26,922 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (30) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+2021-10-28 11:59:26,923 [main           ] INFO  CXFActivator                   - Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (35) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+2021-10-28 11:59:26,928 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/blueprint/core
+2021-10-28 11:59:26,928 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/beans
+2021-10-28 11:59:26,929 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/parameterized-types
+2021-10-28 11:59:26,929 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/configuration/security
+2021-10-28 11:59:26,929 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/wsdl/
+2021-10-28 11:59:26,929 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://www.w3.org/2005/08/addressing
+2021-10-28 11:59:26,929 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://schemas.xmlsoap.org/ws/2004/08/addressing
+2021-10-28 11:59:26,934 [main           ] INFO  NamespaceHandlerRegisterer     - Registered blueprint namespace handler for http://cxf.apache.org/transports/http-jetty/configuration
+2021-10-28 11:59:26,950 [int Extender: 1] INFO  BlueprintContainerImpl         - Bundle BlueprintRestBeanOrderServiceTest/1.0.0 is waiting for namespace handlers [http://camel.apache.org/schema/blueprint/cxf, http://camel.apache.org/schema/blueprint]
+2021-10-28 11:59:27,162 [t Dispatcher: 1] INFO  BlueprintCamelContext          - Attempting to start Camel Context camel
+2021-10-28 11:59:27,162 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:27,162 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing: testCreateAndGetOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:27,162 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:27,163 [main           ] INFO  eprintRestBeanOrderServiceTest - Skipping starting CamelContext as system property skipStartingCamelContext is set to be true.
+2021-10-28 11:59:27,163 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is starting
+2021-10-28 11:59:27,163 [main           ] INFO  DefaultManagementStrategy      - JMX is disabled
+2021-10-28 11:59:27,172 [main           ] INFO  BlueprintCamelContext          - AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2021-10-28 11:59:27,172 [main           ] INFO  BlueprintCamelContext          - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2021-10-28 11:59:27,174 [main           ] INFO  ServerImpl                     - Setting the server's publish address to be http://localhost:8080
+2021-10-28 11:59:27,179 [main           ] INFO  Server                         - jetty-9.2.23.v20171218
+2021-10-28 11:59:27,180 [main           ] WARN  AbstractHandler                - No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@771158fb
+2021-10-28 11:59:27,180 [main           ] INFO  ServerConnector                - Started ServerConnector@91c4a3f{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:27,180 [main           ] INFO  Server                         - Started @5650ms
+2021-10-28 11:59:27,180 [main           ] WARN  ContextHandler                 - Empty contextPath
+2021-10-28 11:59:27,182 [main           ] INFO  ContextHandler                 - Started o.e.j.s.h.ContextHandler@62d0ac62{/,null,AVAILABLE}
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Route: route11 started and consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Route: route12 started and consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Route: route13 started and consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Route: route14 started and consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Route: route15 started and consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Total 5 routes, of which 5 are started.
+2021-10-28 11:59:27,182 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) started in 0.019 seconds
+2021-10-28 11:59:27,182 [main           ] INFO  eprintRestBeanOrderServiceTest - Sending order using json payload: {"partName":"motor","amount":1,"customerName":"honda"}
+2021-10-28 11:59:27,192 [main           ] INFO  eprintRestBeanOrderServiceTest - Created new order with id 3
+2021-10-28 11:59:27,198 [main           ] INFO  eprintRestBeanOrderServiceTest - Response: {"id":1,"partName":"motor","amount":1,"customerName":"honda"}
+2021-10-28 11:59:27,198 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:27,198 [main           ] INFO  eprintRestBeanOrderServiceTest - Testing done: testCreateAndGetOrder(camelinaction.BlueprintRestBeanOrderServiceTest)
+2021-10-28 11:59:27,199 [main           ] INFO  eprintRestBeanOrderServiceTest - Took: 0.035 seconds (35 millis)
+2021-10-28 11:59:27,199 [main           ] INFO  eprintRestBeanOrderServiceTest - ********************************************************************************
+2021-10-28 11:59:27,203 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutting down
+2021-10-28 11:59:27,203 [main           ] INFO  DefaultShutdownStrategy        - Starting to graceful shutdown 5 routes (timeout 10 seconds)
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  ContextHandler                 - Stopped o.e.j.s.h.ContextHandler@62d0ac62{/,null,UNAVAILABLE}
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route11 shutdown complete, was consuming from: Endpoint[cxfrs://bean:restOrderServer?bindingStyle=SimpleConsumer]
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route15 shutdown complete, was consuming from: Endpoint[direct://cancelOrder]
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route14 shutdown complete, was consuming from: Endpoint[direct://updateOrder]
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route13 shutdown complete, was consuming from: Endpoint[direct://getOrder]
+2021-10-28 11:59:27,204 [ - ShutdownTask] INFO  DefaultShutdownStrategy        - Route: route12 shutdown complete, was consuming from: Endpoint[direct://createOrder]
+2021-10-28 11:59:27,204 [main           ] INFO  DefaultShutdownStrategy        - Graceful shutdown of 5 routes completed in 0 seconds
+2021-10-28 11:59:27,205 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) uptime 0.042 seconds
+2021-10-28 11:59:27,206 [main           ] INFO  BlueprintCamelContext          - Apache Camel 2.17.0.redhat-630495 (CamelContext: camel) is shutdown in 0.002 seconds
+2021-10-28 11:59:29,002 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.cm/1.0.6
+2021-10-28 11:59:29,008 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle BlueprintRestBeanOrderServiceTest/1.0.0
+2021-10-28 11:59:29,014 [main           ] INFO  ServerConnector                - Stopped ServerConnector@91c4a3f{HTTP/1.1}{localhost:8080}
+2021-10-28 11:59:29,018 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf-transport/2.17.0.redhat-630495
+2021-10-28 11:59:29,019 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.aries.blueprint.core/1.8.0
+2021-10-28 11:59:29,022 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf/2.17.0.redhat-630495
+2021-10-28 11:59:29,023 [main           ] INFO  BlueprintExtender              - Destroying BlueprintContainer for bundle org.apache.camel.camel-blueprint/2.17.0.redhat-630495
+2021-10-28 11:59:29,033 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 35
+2021-10-28 11:59:29,034 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 12
+2021-10-28 11:59:29,034 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 17
+2021-10-28 11:59:29,034 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 19
+2021-10-28 11:59:29,034 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 21
+2021-10-28 11:59:29,034 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 22
+2021-10-28 11:59:29,035 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 26
+2021-10-28 11:59:29,035 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 27
+2021-10-28 11:59:29,035 [main           ] INFO  CXFActivator                   - Removing the extensions for bundle 30
+2021-10-28 11:59:29,037 [main           ] INFO  Activator                      - Camel activator stopping
+2021-10-28 11:59:29,037 [main           ] INFO  Activator                      - Camel activator stopped
+2021-10-28 11:59:29,037 [main           ] INFO  CamelBlueprintHelper           - Deleting work directory target/bundles/1635415166848
+]]></system-out>
+    <system-err><![CDATA[org.osgi.framework.BundleException: Unable to start bundle
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:163)
+	at org.apache.felix.connect.PojoSR.startBundles(PojoSR.java:314)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:258)
+	at org.apache.felix.connect.PojoSR.<init>(PojoSR.java:130)
+	at org.apache.felix.connect.PojoServiceRegistryFactoryImpl.newPojoServiceRegistry(PojoServiceRegistryFactoryImpl.java:53)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:198)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:133)
+	at org.apache.camel.test.blueprint.CamelBlueprintHelper.createBundleContext(CamelBlueprintHelper.java:111)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.createBundleContext(CamelBlueprintTestSupport.java:128)
+	at org.apache.camel.test.blueprint.CamelBlueprintTestSupport.setUp(CamelBlueprintTestSupport.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.NoClassDefFoundError: org/osgi/service/http/HttpService
+	at org.apache.cxf.transport.http.osgi.HTTPTransportActivator.start(HTTPTransportActivator.java:63)
+	at org.apache.felix.connect.PojoSRBundle.start(PojoSRBundle.java:153)
+	... 39 more
+Oct 28, 2021 11:59:27 AM org.restlet.ext.httpclient.HttpClientHelper start
+INFO: Starting the Apache HTTP client
+Oct 28, 2021 11:59:27 AM org.restlet.ext.httpclient.HttpClientHelper start
+INFO: Starting the Apache HTTP client
+Oct 28, 2021 11:59:27 AM org.restlet.ext.httpclient.HttpClientHelper stop
+INFO: Stopping the HTTP client
+Oct 28, 2021 11:59:27 AM org.restlet.ext.httpclient.HttpClientHelper stop
+INFO: Stopping the HTTP client
+]]></system-err>
+  </testcase>
+</testsuite>

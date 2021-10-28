@@ -2,17 +2,40 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-
+<!--
   <parent>
     <groupId>com.camelinaction</groupId>
     <artifactId>chapter10</artifactId>
     <version>2.0.0</version>
     <relativePath>..</relativePath>
   </parent>
+-->
 
   <artifactId>chapter10-camel-cxf-rest-karaf</artifactId>
+  <groupId>com.camelinaction</groupId>
+  <version>2.0.0</version>
   <name>Camel in Action 2 :: Chapter 10 :: Camel CXF-RS - OSGi with Karaf</name>
   <packaging>bundle</packaging>
+
+    <properties>
+        <jboss.fuse.bom.version>6.3.0.redhat-495</jboss.fuse.bom.version>
+        <version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>        
+    </properties>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.fuse.bom</groupId>
+                <artifactId>jboss-fuse-parent</artifactId>
+                <version>${jboss.fuse.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    
 
   <dependencies>
 
@@ -28,58 +51,50 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
-      <version>${camel-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-blueprint</artifactId>
-      <version>${camel-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-cxf</artifactId>
-      <version>${camel-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-jaxb</artifactId>
-      <version>${camel-version}</version>
     </dependency>
 
     <!-- cxf http/jetty server -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-transports-http</artifactId>
-      <version>${cxf-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-transports-http-jetty</artifactId>
-      <version>${cxf-version}</version>
     </dependency>
     <!-- to enable json support -->
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-rs-extension-providers</artifactId>
-      <version>${cxf-version}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.jaxrs</groupId>
       <artifactId>jackson-jaxrs-json-provider</artifactId>
-      <version>${jackson-version}</version>
     </dependency>
+
+
 
     <!-- testing -->
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-test-blueprint</artifactId>
-      <version>${camel-version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+      <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-restlet</artifactId>
-      <version>${camel-version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -109,7 +124,7 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>${maven-bundle-plugin-version}</version>
+        <version>${version.maven-bundle-plugin}</version>
         <extensions>true</extensions>
         <configuration>
         </configuration>
@@ -169,4 +184,3 @@
   </build>
 
 </project>
-
