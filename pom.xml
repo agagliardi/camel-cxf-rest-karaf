@@ -20,15 +20,19 @@
     <properties>
         <jboss.fuse.bom.version>7.9.0.fuse-sb2-790065-redhat-00001</jboss.fuse.bom.version>
         <version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>        
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>        
+        <jackson-version>2.12.1</jackson-version>        
+        <hawtio-version>2.0.0.fuse-sb2-790047-redhat-00001</hawtio-version>
+        <camel-version>2.23.2.fuse-790054-redhat-00001</camel-version>
+        <cxf-version>3.3.6.fuse-790049-redhat-00001</cxf-version>
     </properties>
     
     <dependencyManagement>
         <dependencies>
-			<dependency>
-				<groupId>org.jboss.redhat-fuse</groupId>
-				<artifactId>fuse-karaf-bom</artifactId>
+            <dependency>
+                <groupId>org.jboss.redhat-fuse</groupId>
+                <artifactId>fuse-karaf-bom</artifactId>
                 <version>${jboss.fuse.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -39,27 +43,16 @@
 
   <dependencies>
 
-    <!-- needed for OSGi testing with CXF 
     <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm-all</artifactId>
-      <version>6.0_ALPHA</version>
-      <scope>test</scope>
+        <groupId>org.ow2.asm</groupId>
+        <artifactId>asm</artifactId>
+        <version>9.1</version>
     </dependency>
-    -->
-    
-    <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
-<dependency>
-    <groupId>org.ow2.asm</groupId>
-    <artifactId>asm</artifactId>
-    <version>9.1</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm-commons -->
-<dependency>
-    <groupId>org.ow2.asm</groupId>
-    <artifactId>asm-commons</artifactId>
-    <version>9.1</version>
-</dependency>
+    <dependency>
+        <groupId>org.ow2.asm</groupId>
+        <artifactId>asm-commons</artifactId>
+        <version>9.1</version>
+    </dependency>
 
     <!-- camel -->
     <dependency>
@@ -116,12 +109,12 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-<dependency>
-  <groupId>org.osgi</groupId>
-  <artifactId>org.osgi.service.http</artifactId>
-  <version>1.2.2</version>
-  <scope>test</scope>
-</dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.service.http</artifactId>
+      <version>1.2.2</version>
+      <scope>test</scope>
+    </dependency>
 
     <!-- logging -->
     <dependency>

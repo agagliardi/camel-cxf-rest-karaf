@@ -5,7 +5,9 @@
 
   <feature name='chapter10-camel-cxf-rest-karaf' version='${project.version}'>
     <feature>war</feature>
+    <!--
     <feature version="${hawtio-version}">hawtio-offline</feature>
+    -->
     <feature version="${camel-version}">camel</feature>
     <feature version="${camel-version}">camel-cxf</feature>
     <feature version="${camel-version}">camel-jaxb</feature>
